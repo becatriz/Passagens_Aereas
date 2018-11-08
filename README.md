@@ -4,7 +4,7 @@
 	
 O sistema de Viagens CG trata do gerenciamento de reservas de passagens aéreas. O sistema tem como principal objetivo reservar passagens áreas para clientes, para isso o sistema deverá ser capaz de apresentar opções de voos, assentos, mudança de classe e opções de pagamentos.
 
-## 4.1 Requisitos funcionais
+## 1.3 Requisitos funcionais
 Controle e nível de acesso:
 
 RF-1: O sistema deve exigir login.
@@ -64,15 +64,15 @@ RNF-3: O sistema deve ser capaz de guardar dados de uma operação que realizou 
 
 Disponibilidade:
 
-	RNF-4: O sistema deve estar disponível 24hs por dia, 7 dias por semana.
+RNF-4: O sistema deve estar disponível 24hs por dia, 7 dias por semana.
 
 Segurança:
 
 RNF-5: O sistema deve ter proteção máxima, não deve ser possível que passageiros tenham acesso a dados de outro passageiro, como compras, dados pessoais, a única maneira de acesso a conta deve ser por login e senha.
 
-	RNF-6: Senhas necessitam ser mascarados.
+RNF-6: Senhas necessitam ser mascarados.
 
-	RNF-7 Usuários comum não podem ter acesso a funções de administrador.
+RNF-7 Usuários comum não podem ter acesso a funções de administrador.
 
 Portabilidade:
 	
@@ -80,5 +80,5 @@ RNF-8 O sistema deve interagir com o computador central da companhia aérea.
  
 RNF-9 O sistema deve ser capaz de armazenar dados na base de dados Postgree.
 
-## 5 Restrições
+## 2 Restrições
 O sistema será desenvolvido em Java EE para aplicações Web. Para isso utilizará como servidor o TomCat , já que o mesmo é específico para desenvolvimento Java. Desenvolvido no padão MVC para  injeção de dependências e persistência de dados. Por se tratar de uma aplicação Web o sistema deverá funcionar em todos os navegadores e ser igualmente responsivo.
