@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>ServeletPassagensAereas</servlet-name>
+        <servlet-class>controller.ServeletPassagensAereas</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServeletPassagensAereas</servlet-name>
+        <url-pattern>/pagamento</url-pattern>
+        <url-pattern>/resumo</url-pattern>
+        <url-pattern>/inicio</url-pattern>
+        <url-pattern>/destinos</url-pattern>
+        <url-pattern>/lugares</url-pattern>
+        <url-pattern>/mensagem</url-pattern>
+        <url-pattern>/conta</url-pattern>
+        <url-pattern>/registrar</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>home.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
