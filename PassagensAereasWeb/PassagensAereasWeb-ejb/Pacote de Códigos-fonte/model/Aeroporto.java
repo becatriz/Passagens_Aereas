@@ -6,10 +6,12 @@
 package model;
 
 import java.io.Serializable;
+import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
 /**
@@ -27,16 +29,19 @@ public class Aeroporto implements Serializable {
     @OneToOne
     private Endereco endereco;
     private long idEndereco;
+    @OneToMany
+    private List<Aeronave> aeronaves;
 
     public Aeroporto() {
     }
-    
-    public Aeroporto(String nome, Endereco endereco, int idEndereco) {
+
+    public Aeroporto(String nome, Endereco endereco, long idEndereco, List<Aeronave> aeronave) {
         this.nome = nome;
         this.endereco = endereco;
         this.idEndereco = idEndereco;
+        this.aeronaves = aeronave;
     }
-
+    
     public String getNome() {
         return nome;
     }
@@ -51,6 +56,14 @@ public class Aeroporto implements Serializable {
 
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
+    }
+
+    public List<Aeronave> getAeronave() {
+        return aeronaves;
+    }
+
+    public void setAeronave(List<Aeronave> aeronave) {
+        this.aeronaves = aeronave;
     }
 
     public long getIdEndereco() {
