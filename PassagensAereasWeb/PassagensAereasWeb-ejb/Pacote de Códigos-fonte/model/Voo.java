@@ -13,6 +13,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 
 /**
  *
@@ -31,10 +32,10 @@ public class Voo implements Serializable {
     private List<Passagem> passagens;
     @OneToMany(mappedBy = "voo")
     private List<Horario> horarios;
-    @ManyToOne
+    @OneToOne
     private Aeroporto aeroportoOrigem;
-    @ManyToOne
-    private Aeroporto aeroporto;
+    @OneToOne
+    private Aeroporto aeroportoDestino;
 
     public int getId() {
         return id;

@@ -31,6 +31,8 @@ public class Aeroporto implements Serializable {
     private long idEndereco;
     @OneToMany
     private List<Aeronave> aeronaves;
+    @OneToMany
+    private List<Voo> voos;
 
     public Aeroporto() {
     }
