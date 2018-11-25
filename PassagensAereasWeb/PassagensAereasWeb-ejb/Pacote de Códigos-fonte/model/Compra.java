@@ -6,33 +6,66 @@
 package model;
 
 import java.io.Serializable;
+import java.util.Date;
 import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+import javax.persistence.Temporal;
 
 /**
  *
  * @author Marcelo
  */
 @Entity
-public class Passagem implements Serializable {
+public class Compra implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
-    private String classe;
-    private double preco;
-    private String tipos;
-    private int tipo;
-    @ManyToOne
-    private Voo voo;
-    @OneToMany(mappedBy = "passagem")
-    private List<Assento> reserva;
+    @Temporal(javax.persistence.TemporalType.DATE)
+    private Date data;
+    @OneToOne
+    private Usuario usuario;
+    @OneToMany
+    private List<Passagem> passagem;
+
+    public Compra() {
+    }
+
+    public Compra(Date data, Usuario usuario, List<Passagem> passagem) {
+        this.data = data;
+        this.usuario = usuario;
+        this.passagem = passagem;
+    }
+
+    public Date getData() {
+        return data;
+    }
+
+    public void setData(Date data) {
+        this.data = data;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
+
+    public List<Passagem> getPassagem() {
+        return passagem;
+    }
+
+    public void setPassagem(List<Passagem> passagem) {
+        this.passagem = passagem;
+    }
 
     public int getId() {
         return id;
@@ -52,10 +85,10 @@ public class Passagem implements Serializable {
     @Override
     public boolean equals(Object object) {
         // TODO: Warning - this method won't work in the case the id fields are not set
-        if (!(object instanceof Passagem)) {
+        if (!(object instanceof Compra)) {
             return false;
         }
-        Passagem other = (Passagem) object;
+        Compra other = (Compra) object;
         if (this.id != other.id) {
             return false;
         }
@@ -64,7 +97,7 @@ public class Passagem implements Serializable {
 
     @Override
     public String toString() {
-        return "model.Passagem[ id=" + id + " ]";
+        return "model.Compra[ id=" + id + " ]";
     }
     
 }
