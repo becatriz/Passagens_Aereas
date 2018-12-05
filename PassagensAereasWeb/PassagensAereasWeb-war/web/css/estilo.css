@@ -1,0 +1,824 @@
+
+
+html, body{
+
+    width: 100%;
+    height: 100%;
+    background-color: #408784;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 40px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color:white;
+    margin-left: 1px;
+    margin-right: 30px;
+    
+    border-bottom: 3px solid;
+    padding-bottom: 20px;
+    
+
+}
+
+
+
+
+#menu ul li{
+
+    display: inline-block;
+    font: bold 24px/45px Helvetica, Sans-Serif; 
+    font-size: 15px;
+    margin: 0 10px;
+    float: right;
+    margin-right: 20px;  
+    margin-top: 5px;
+
+}
+
+#menu-pg2 ul li{
+
+    display: inline-block;
+    font: bold 24px/45px Helvetica, Sans-Serif; 
+    font-size: 15px;
+    margin: 0 10px;
+    float: right;
+    margin-right: 35px;  
+    margin-top: -5px;
+
+}
+
+
+a{
+
+    text-decoration: none;
+    color: white;
+
+}
+
+#header{
+
+    width: 101%;
+    height: 50px;
+    background-color: #a02329;
+    margin-top: -15px;
+    margin-left: -10px;
+
+}
+
+img{
+    width: 145%;
+    height: 145%;
+    margin-left: -10px;
+    border:2px solid #999;
+    overflow: hidden;
+    position: absolute;
+}
+
+
+
+
+
+#conteudo h2 { 
+    position: absolute; 
+    top: 50px; 
+    text-align: center;
+    width: 100%; 
+}
+
+
+h2 span{
+
+    font-weight: normal;
+    font-size: 40px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: white; 
+    padding: 10px; 
+
+}
+h5{
+    color: white; 
+    font: bold 24px/45px Helvetica, Sans-Serif; 
+    position: absolute; 
+    letter-spacing: 5px;
+    top: 60px; 
+    font-style: italic;
+    font-size: 11px;
+    text-align: center;
+    width: 100%; 
+}
+
+p{
+
+    color: white; 
+    font: bold 24px/45px Helvetica, Sans-Serif; 
+    position: absolute; 
+    letter-spacing: 1px;
+    font-size: 15px;
+    top: 150px; 
+
+}
+
+#result{
+    position: absolute; 
+    top: 260px; 
+    color: #edf4ee; 
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 10px;  
+    line-height:  70px;
+    margin-left: 180px;
+
+}
+/*Estilizando o select*/
+.div-select01 {
+    width:250px;  /* Tamanho final do select */
+    overflow:hidden; /* Esconde o conteúdo que passar do tamanho especificado */
+    margin-left: 25px;
+    position: absolute;
+    top: 130px;
+}
+.div-select02 {
+    width:250px;  /* Tamanho final do select */
+    overflow:hidden; /* Esconde o conteúdo que passar do tamanho especificado */
+    margin-left: 300px;
+    position: absolute;
+    top:130px;
+}
+
+.div-select03 {
+    width:250px;  /* Tamanho final do select */
+    overflow:hidden; /* Esconde o conteúdo que passar do tamanho especificado */
+    margin-left: 25px;
+    position: absolute;
+    top: 230px;
+}
+.div-select04 {
+    width:250px;  /* Tamanho final do select */
+    overflow:hidden; /* Esconde o conteúdo que passar do tamanho especificado */
+    margin-left: 300px;
+    position: absolute;
+    top: 230px;
+}
+.div-select05 {
+    width:250px;  /* Tamanho final do select */
+    overflow:hidden; /* Esconde o conteúdo que passar do tamanho especificado */
+    margin-left: 25px;
+    position: absolute;
+    top: 330px;
+}
+.div-select06 {
+    width:250px;  /* Tamanho final do select */
+    overflow:hidden; /* Esconde o conteúdo que passar do tamanho especificado */
+    margin-left: 300px;
+    position: absolute;
+    top: 330px;
+}
+
+.div-select01 select {
+    background: url(http://www.webcis.com.br/images/imagens-noticias/select/ico-seta-select.gif) no-repeat #354880;  /* Imagem de fundo (Seta) */
+    background-position: 205px center;  /*Posição da imagem do background*/
+    width: 270px; /* Tamanho do select, maior que o tamanho da div "div-select" */
+    height:48px; /* altura do select, importante para que tenha a mesma altura em todo os navegadores */
+    font-family:Arial, Helvetica, sans-serif; /* Fonte do Select */
+    font-size:18px; /* Tamanho da Fonte */
+    padding:13px 20px 13px 12px; /* Configurações de padding para posicionar o texto no campo */
+    color:#fff; /* Cor da Fonte */
+    text-indent: 0.01px; /* Remove seta padrão do FireFox */
+    text-overflow: "";  /* Remove seta padrão do FireFox */     
+    select::-ms-expand {display: none;} /* Remove seta padrão do IE*/
+
+}
+
+.div-select02 select {
+    background: url(http://www.webcis.com.br/images/imagens-noticias/select/ico-seta-select.gif) no-repeat #354880;  /* Imagem de fundo (Seta) */
+    background-position: 205px center;  /*Posição da imagem do background*/
+    width: 270px; /* Tamanho do select, maior que o tamanho da div "div-select" */
+    height:48px; /* altura do select, importante para que tenha a mesma altura em todo os navegadores */
+    font-family:Arial, Helvetica, sans-serif; /* Fonte do Select */
+    font-size:18px; /* Tamanho da Fonte */
+    padding:13px 20px 13px 12px; /* Configurações de padding para posicionar o texto no campo */
+    color:#fff; /* Cor da Fonte */
+    text-indent: 0.01px; /* Remove seta padrão do FireFox */
+    text-overflow: "";  /* Remove seta padrão do FireFox */     
+    select::-ms-expand {display: none;} /* Remove seta padrão do IE*/
+
+}
+
+#date{
+    background: url(http://www.webcis.com.br/images/imagens-noticias/select/ico-seta-select.gif) no-repeat #354880;  /* Imagem de fundo (Seta) */
+    background-position: 205px center;  /*Posição da imagem do background*/
+    width: 175px; /* Tamanho do select, maior que o tamanho da div "div-select" */
+    height:20px; /* altura do select, importante para que tenha a mesma altura em todo os navegadores */
+    font-family:Arial, Helvetica, sans-serif; /* Fonte do Select */
+    font-size:18px; /* Tamanho da Fonte */
+    padding:13px 20px 13px 12px; /* Configurações de padding para posicionar o texto no campo */
+    color:#fff; /* Cor da Fonte */
+   
+    
+}
+.div-select03 select {
+    background: url(http://www.webcis.com.br/images/imagens-noticias/select/ico-seta-select.gif) no-repeat #354880;  /* Imagem de fundo (Seta) */
+    background-position: 205px center;  /*Posição da imagem do background*/
+    width: 270px; /* Tamanho do select, maior que o tamanho da div "div-select" */
+    height:48px; /* altura do select, importante para que tenha a mesma altura em todo os navegadores */
+    font-family:Arial, Helvetica, sans-serif; /* Fonte do Select */
+    font-size:18px; /* Tamanho da Fonte */
+    padding:13px 20px 13px 12px; /* Configurações de padding para posicionar o texto no campo */
+    color:#fff; /* Cor da Fonte */
+    text-indent: 0.01px; /* Remove seta padrão do FireFox */
+    text-overflow: "";  /* Remove seta padrão do FireFox */     
+    select::-ms-expand {display: none;} /* Remove seta padrão do IE*/
+
+}
+.div-select04 select {
+    background: url(http://www.webcis.com.br/images/imagens-noticias/select/ico-seta-select.gif) no-repeat #354880;  /* Imagem de fundo (Seta) */
+    background-position: 205px center;  /*Posição da imagem do background*/
+    width: 270px; /* Tamanho do select, maior que o tamanho da div "div-select" */
+    height:48px; /* altura do select, importante para que tenha a mesma altura em todo os navegadores */
+    font-family:Arial, Helvetica, sans-serif; /* Fonte do Select */
+    font-size:18px; /* Tamanho da Fonte */
+    padding:13px 20px 13px 12px; /* Configurações de padding para posicionar o texto no campo */
+    color:#fff; /* Cor da Fonte */
+    text-indent: 0.01px; /* Remove seta padrão do FireFox */
+    text-overflow: "";  /* Remove seta padrão do FireFox */     
+    select::-ms-expand {display: none;} /* Remove seta padrão do IE*/
+
+}
+.div-select05 select {
+    background: url(http://www.webcis.com.br/images/imagens-noticias/select/ico-seta-select.gif) no-repeat #354880;  /* Imagem de (Seta) */
+    background-position: 205px center;  /*Posição da imagem do background*/
+    width: 270px; /* Tamanho do select, maior que o tamanho da div "div-select" */
+    height:48px; /* altura do select, importante para que tenha a mesma altura em todo os navegadores */
+    font-family:Arial, Helvetica, sans-serif; /* Fonte do Select */
+    font-size:18px; /* Tamanho da Fonte */
+    padding:13px 20px 13px 12px; /* Configurações de padding para posicionar o texto no campo */
+    color:#fff; /* Cor da Fonte */
+    text-indent: 0.01px; /* Remove seta padrão do FireFox */
+    text-overflow: "";  /* Remove seta padrão do FireFox */     
+    select::-ms-expand {display: none;} /* Remove seta padrão do IE*/
+
+}
+
+.div-select06 select {
+    background: url(http://www.webcis.com.br/images/imagens-noticias/select/ico-seta-select.gif) no-repeat #354880;  /* Imagem de fundo (Seta) */
+    background-position: 205px center;  /*Posição da imagem do background*/
+    width: 270px; /* Tamanho do select, maior que o tamanho da div "div-select" */
+    height:48px; /* altura do select, importante para que tenha a mesma altura em todo os navegadores */
+    font-family:Arial, Helvetica, sans-serif; /* Fonte do Select */
+    font-size:18px; /* Tamanho da Fonte */
+    padding:13px 20px 13px 12px; /* Configurações de padding para posicionar o texto no campo */
+    color:#fff; /* Cor da Fonte */
+    text-indent: 0.01px; /* Remove seta padrão do FireFox */
+    text-overflow: "";  /* Remove seta padrão do FireFox */     
+    select::-ms-expand {display: none;} /* Remove seta padrão do IE*/
+
+}
+
+.botao_continuar_vai2 a{
+     padding:15px 5px 5px 5px;
+    text-decoration: none;
+    background: #408784;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,1);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,1);
+    border-bottom: 1px solid rgba(0,0,0,1);
+    outline:none;
+    margin-left: 1280px;
+    padding:10px 15px;
+    position: absolute;
+    top: 750px; 
+    white-space:nowrap;
+    border-radius:16px;
+    
+}
+
+.botao_continuar_vai {
+    
+    padding:15px 5px 5px 5px;
+    text-decoration: none;
+    background: #408784;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,1);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,1);
+    border-bottom: 1px solid rgba(0,0,0,1);
+    outline:none;
+    margin-left: 1250px;
+    padding: 30px 25px;
+    position: absolute;
+    top: 500px; 
+    white-space:nowrap;
+    border-radius:16px;
+
+    
+}
+
+
+
+.botao_continuar a{
+
+
+    padding:15px 5px 5px 5px;
+    text-decoration: none;
+    background: #408784;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,1);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,1);
+    border-bottom: 1px solid rgba(0,0,0,1);
+    outline:none;
+    margin-left: 1280px;
+    padding:10px 15px;
+    position: absolute;
+    top: 350px; 
+    white-space:nowrap;
+    border-radius:16px;
+
+
+}
+.botao_continuar2 a{
+     padding:15px 5px 5px 5px;
+    text-decoration: none;
+    background: #408784;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,1);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,1);
+    border-bottom: 1px solid rgba(0,0,0,1);
+    outline:none;
+    margin-left: 950px;
+    padding:10px 25px;
+    position: absolute;
+    top: 350px; 
+    white-space:nowrap;
+    border-radius:16px;
+}
+#botaoApagar{
+    
+    margin-top: 10%;  
+    margin-left: 2%;
+   
+}
+
+
+.lugares{
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 80%;
+    height: 100%;
+}
+.a{
+    position: absolute;
+    top:19%;
+}
+.b{
+
+    position: absolute;
+    top:25%;
+}
+.c{
+    top:31%;
+}
+.d{
+    top:37%;
+}
+.e{
+    top:44%;
+}
+.f{
+    top:50%;
+}
+#botao{
+    top:19%;
+    margin-left:15%;
+
+
+}
+#botao2{
+
+    margin-left: 1px;;
+}
+
+
+
+#botao4{
+
+    margin-left: 4%;
+}
+#botao5{
+
+    margin-left: 1px;
+}
+
+#botao6{
+
+    margin-left: 1px;
+}
+#botao7{
+
+    margin-left: 4%;
+}
+#botao8{
+
+    margin-left: 1px;
+}
+
+#botao9{
+
+    margin-left: 1px;
+}
+#botao10{
+
+    margin-left:15%;
+}
+#botao11{
+    margin-left: 1px;
+}
+
+#botao12{
+    margin-left: 1px;
+}
+#botao13{
+    margin-left: 4%;
+}
+.botao14{
+    margin-left: 1px;
+}
+
+#botao15{
+    margin-left: 1px;
+}
+
+#botao16{
+    margin-left: 4%;
+}
+#botao17{
+    margin-left: 1px;
+}
+
+#botao18{
+    margin-left: 1px;
+}
+
+#botao19{
+
+    margin-left:15%;
+}
+#botao20{
+    margin-left: 1px;
+}
+
+#botao21{
+    margin-left: 1px;
+}
+
+#botao22{
+    margin-left: 4%;
+}
+#botao23{
+    margin-left: 1px;
+}
+
+#botao24{
+    margin-left: 1px;
+}
+#botao25{
+    margin-left: 4%;
+
+}
+#botao26{
+    margin-left: 1px;
+}
+
+#botao27{
+    margin-left: 1px;
+}
+#botao28{
+    margin-left:15%;
+}
+#botao29{
+    margin-left: 1px;
+}
+
+#botao30{
+    margin-left: 1px;
+}
+#botao31{
+    margin-left: 4%;
+}
+.botao32{
+    margin-left: 1px;
+}
+
+#botao33{
+    margin-left: 1px;
+}
+
+#botao34{
+    margin-left: 4%;
+}
+#botao35{
+    margin-left: 1px;
+}
+
+#botao36{
+    margin-left: 1px;
+}
+#botao37{
+    margin-left: 15%;
+}
+#botao38{
+    margin-left: 1px;
+}
+
+#botao39{
+    margin-left: 1px;
+}
+
+#botao40{
+    margin-left: 4%;
+}
+#botao41{
+    margin-left: 1px;
+}
+
+#botao42{
+    margin-left: 1px;
+}
+#botao43{
+    margin-left: 4%;
+}
+#botao44{
+    margin-left: 1px;
+}
+
+#botao45{
+    margin-left: 1px;
+}
+#botao46{
+    margin-left: 15%;
+}
+#botao47{
+    margin-left: 1px;
+}
+
+#botao48{
+    margin-left: 1px;
+}
+#botao49{
+    margin-left: 4%;
+}
+.botao50{
+    margin-left: 1px;
+}
+
+#botao51{
+    margin-left: 1px;
+}
+
+#botao52{
+    margin-left: 4%;
+}
+#botao53{
+    margin-left: 1px;
+}
+
+#botao54{
+    margin-left: 1px;
+}
+
+.economica{
+    margin-top: -23%;
+    color: white;
+    margin-left: 55%;
+   
+    
+
+}
+.fileira_a{
+    margin: 0 auto;
+
+}
+
+.fileira_f{
+    margin: 0 auto;
+    
+}
+
+#frente{
+    float:left;
+    top:15%;
+    margin-left: 20%;
+}
+#fundo{
+    top:70%;
+    margin-left: 20%;
+}
+
+.container {
+  width: 45%;
+  margin-left: 5%;
+}
+
+.container01{
+    width: 30%;
+    margin-left: 60%;
+    margin-top: -60%;
+}
+.container002{
+   
+    margin-top: 20px;
+    margin-right: 400px;
+    margin-left: 400px;
+    
+}
+
+
+.form-contact {
+  width: 100%;
+  font-family: "Arial", Times, serif;
+}
+
+.form-contact-input {
+  width: 100%;
+  color: #292929;
+  font-size: 18px;
+  background-color: #E9E9E9;
+  border: 1px solid #E9E9E9;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  height: 40px;
+  margin-bottom:20px;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  text-indent: 20px;
+}
+
+.form-contact-textarea {
+  width: 100%;
+  color: #292929;
+  font-size: 18px;
+  background-color: #E9E9E9;
+  border: 1px solid #E9E9E9;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  height: 200px;
+  margin-bottom: 100px;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  text-indent: 20px;
+  padding-top: 16px;
+  padding-left: 0;
+  padding-right: 0;
+  font-family: "Arial", Times, serif;
+}
+
+.form-contact-button {
+  width: 100%;
+  font-size: 18px;
+  border-radius: 4px;
+  color: #fff;
+  height: 40px;
+  opacity: .8;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background: #B22222;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #500707;
+  border-right: 1px solid #500707;
+  transition: 1s;
+}
+
+.form-contact-button:hover {
+  opacity: 1;
+}
+
+#criar{
+    margin-left: 35%;
+    margin-top: -5%;
+    margin-right: 20%;
+}
+
+#area{
+    margin-left: 45%;
+    margin-right: 0.5%;
+    margin-top: 30px;
+    padding: 20px;
+}
+.campo_nome{
+    margin-left: 5%;
+}
+.campo_sobrenome{
+    margin-left: 0.5%;
+}
+.campo_idade{
+    margin-left: 5.5%;
+}
+
+#passageiro{
+    margin-top:15%;
+    margin-left: 20%;
+}
+
+#cartao{
+    margin-top: 30px;
+}
+
+.container04{
+    margin-top: 20px;
+    
+    
+}
+
+
+
+.boleto{
+    color:white;   
+    font-size: 25px;
+    margin-left: 900px;
+    margin-top: 80px;  
+}
+.wps-bn{
+    margin-left: 560px;
+    margin-top: 50px;
+   
+    
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.botao_continuar_vai_vai a {
+    padding:15px 5px 5px 5px;
+    text-decoration: none;
+    background: #408784;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,1);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,1);
+    border-bottom: 1px solid rgba(0,0,0,1);
+    outline:none;
+    margin-left: 1280px;
+    padding:10px 15px;
+    position: absolute;
+    top: 300px; 
+    white-space:nowrap;
+    border-radius:16px;
+    
+}
+
+
+
+.login-form {
+	
+	margin: auto;
+	padding: 2em;
+	width: 60%;
+        margin-top: -90px;
+        margin-left: 400px;
+}
+.login-form__input {
+	border-style: none;
+	display: block;
+	line-height: 2.5;
+	margin-bottom: 1em;
+	
+	width: 50%;
+}
+
+.login-form__submit {
+	background-color: #008080;
+	border-style: none;
+	color: #ffffff;
+	cursor: pointer;
+	display: block;
+	font-size: 1.1em;
+	line-height: 2.5;
+	text-transform: uppercase;
+	width: 50%;
+}
+
+.login-form__submit:hover {
+	background-color: #005252;
+}
+
+.login-form__forgot {
+	color: #ffffff;
+	display: block;
+	
+	text-align: center;
+	text-decoration: none;
+}
+
+.resumop{
+    margin-left: -120px;
+}
