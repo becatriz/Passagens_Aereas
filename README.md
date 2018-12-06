@@ -3,7 +3,7 @@ Trabalho da disciplina de Programação para Web
 
 ## Organização do Grupo
 
-Marcelo Oliveira : desenvolvedor backend
+Marcelo Oliveira : desenvolvedor backend<br/>
 Rebeca Lopes : desenvolvedora FrontEnd
 Paulo Oka: desenvolvedor FrontEnd
 Jefferson Henrique: Analista de projeto
