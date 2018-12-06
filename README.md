@@ -4,11 +4,11 @@ Trabalho da disciplina de Programação para Web
 ## Organização do Grupo
 
 Marcelo Oliveira : desenvolvedor backend<br/>
-Rebeca Lopes : desenvolvedora FrontEnd
-Paulo Oka: desenvolvedor FrontEnd
-Jefferson Henrique: Analista de projeto
-Douglas Felicioano: Analista de projeto
-Sandra Mesquisa: Analista de projeto
+Rebeca Lopes : desenvolvedora FrontEnd<br/>
+Paulo Oka: desenvolvedor FrontEnd<br/>
+Jefferson Henrique: Analista de projeto<br/>
+Douglas Felicioano: Analista de projeto<br/>
+Sandra Mesquisa: Analista de projeto<br/>
 
 ## Diretorios organização
 
